@@ -1,31 +1,30 @@
 import React from 'react';
-import Image from 'next/image';
 
 const Navbar = () => {
   return (
-    <div className="container-fluid bg-black text-white py-1">
-      <div className="container d-flex justify-content-center align-items-center">
-        <ul className="navbar nav gap-3">
+    <nav className="container-fluid bg-black text-white" style={{fontFamily: 'var(--font-oswald)'}}>
+      <div className="container">
+        <ul className="nav justify-content-center align-items-center gap-4">
           <li className="nav-item">
-            <a href="#" className="nav-link text-white">HOME</a>
+            <a href="/" className="nav-link text-white">HOME</a>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link text-white">ABOUT</a>
+            <a href="/about" className="nav-link text-white">ABOUT</a>
           </li>
-          <li className="nav-item" style={{width: "90px", height: "90px"}}>
-            <a href="#" className="nav-link">
-              <img src="/Logo.jpg" alt="Logo"  className="img-fluid" style={{height: "100%", width: "100%"}}/>
+          <li className="nav-item d-flex align-items-center">
+            <a href="/" className="nav-link p-0">
+              <img src="/Logo.png" alt="Logo"  className="img-fluid" style={{width: "110px", height: "90px"}}/>
             </a>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link text-white">SERVICE</a>
+            <a href="/services" className="nav-link text-white">SERVICE</a>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link text-white">CONTACT</a>
+            <a href="/contact" className="nav-link text-white">CONTACT</a>
           </li>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 };
 

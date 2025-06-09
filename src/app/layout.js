@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import { Oswald } from "next/font/google"; // ✅ Add this line
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
 import Navbar from "@/Components/Navbar";
@@ -14,6 +15,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const oswald = Oswald({ // ✅ Oswald setup
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-oswald",
+  display: "swap",
+});
+
 export const metadata = {
   title: "Pakhre Tech Studio | Web Development & Design Services",
   description: "Pakhre Tech Studio offers modern, responsive, and affordable website development services. From design to deployment — your digital vision, delivered.",
@@ -21,11 +29,11 @@ export const metadata = {
   openGraph: {
     title: "Pakhre Tech Studio | Affordable Web Design",
     description: "Custom websites for businesses, startups, and personal brands. Mobile-first, SEO-optimized, and lightning-fast.",
-    url: "https://yourwebsite.com", // replace with your domain
+    url: "https://yourwebsite.com",
     siteName: "Pakhre Tech Studio",
     images: [
       {
-        url: "/og-image.png", // recommended size: 1200x630 px
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Pakhre Tech Studio – Web Design & Development",
@@ -39,16 +47,15 @@ export const metadata = {
   icons: {
     icon: "/public/white version.png",
   },
-  authors: [{ name: "Roshan Pakhre", url: "https://www.instagram.com/yourhandle" }], // replace with your Instagram
+  authors: [{ name: "Roshan Pakhre", url: "https://www.instagram.com/yourhandle" }],
   creator: "Pakhre Tech Studio",
 };
-
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${oswald.variable} antialiased`}
       >
         <Navbar />
         {children}
