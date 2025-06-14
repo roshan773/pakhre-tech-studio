@@ -40,7 +40,7 @@ export default function Home() {
                       <li>Contact Form</li>
                       <li>Basic SEO setup</li>
                     </ul>
-                    <h5 className="mt-auto">💰 Price: ₹2,999</h5>
+                    <h5 className="mt-auto">Price: ₹2,999</h5>
                   </div>
                 </div>
               </div>
@@ -65,7 +65,7 @@ export default function Home() {
                       <li>Contact Form with Email Integration</li>
                       <li>Google Map Integration</li>
                     </ul>
-                    <h5 className="mt-auto">💰 Price: ₹5,999</h5>
+                    <h5 className="mt-auto"> Price: ₹5,999</h5>
                   </div>
                 </div>
               </div>
@@ -91,7 +91,7 @@ export default function Home() {
                       <li>Domain & SSL Setup</li>
                       <li>Contact Form with Email Integration</li>
                     </ul>
-                    <h5 className="mt-auto">💰 Price: ₹9,999</h5>
+                    <h5 className="mt-auto">Price: ₹9,999</h5>
                   </div>
                 </div>
               </div>

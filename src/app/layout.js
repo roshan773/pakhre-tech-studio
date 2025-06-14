@@ -23,20 +23,20 @@ const oswald = Oswald({
 });
 
 export const metadata = {
-  title: "Pakhre Tech Studio | Web Development & Design Services",
-  description: "Pakhre Tech Studio offers modern, responsive, and affordable website development services. From design to deployment — your digital vision, delivered.",
+  title: "Roshan Tech Studio | Web Development & Design Services",
+  description: "Roshan Tech Studio offers modern, responsive, and affordable website development services. From design to deployment — your digital vision, delivered.",
   metadataBase: new URL("https://yourwebsite.com"), // replace with your domain
   openGraph: {
-    title: "Pakhre Tech Studio | Affordable Web Design",
+    title: "Roshan Tech Studio | Affordable Web Design",
     description: "Custom websites for businesses, startups, and personal brands. Mobile-first, SEO-optimized, and lightning-fast.",
     url: "https://yourwebsite.com",
-    siteName: "Pakhre Tech Studio",
+    siteName: "Roshan Tech Studio",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Pakhre Tech Studio – Web Design & Development",
+        alt: "Roshan Tech Studio – Web Design & Development",
       },
     ],
     type: "website",
@@ -48,7 +48,7 @@ export const metadata = {
     icon: "/public/white version.png",
   },
   authors: [{ name: "Roshan Pakhre", url: "https://www.instagram.com/yourhandle" }],
-  creator: "Pakhre Tech Studio",
+  creator: "Roshan Tech Studio",
 };
 
 export default function RootLayout({ children }) {
