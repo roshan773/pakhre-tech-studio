@@ -99,6 +99,17 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="cta-section my-1" style={{ backgroundImage: "url('/CTA-banner.png')", height: "auto", backgroundSize: "cover", backgroundPosition: "center" }}>
+          <div className="container-fluid w-100 h-auto text-center">
+            <div className="display-1" style={{ fontSize: "10vw" }}>DON'T HAVE A WEBSITE</div>
+            <button className="display-6">
+              <a href="#" className="btn2" style={{ fontSize: "2vw" }}>Order Now</a>
+            </button>
+            <div className="w-100 d-flex justify-content-center align-items-center">
+              <img src="https://cdn3d.iconscout.com/3d/premium/thumb/man-stand-folding-hand-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--boy-stands-person-hands-character-casual-outfits-half-body-pack-people-illustrations-5600563.png"  />
+            </div>
+          </div>
+        </div>
 
       </div>
     </>
