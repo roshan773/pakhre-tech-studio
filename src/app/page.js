@@ -1,9 +1,6 @@
 'use client';
 import { useEffect } from "react";
 
-// Important for Next.js 13+ if using App Router
-// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
 export default function Home() {
 
   useEffect(() => {
@@ -165,9 +162,9 @@ export default function Home() {
           <div className="accordion accordion-flush" id="faqAccordion">
 
             {/* Q1 */}
-            <div className="accordion-item mb-3 rounded shadow-sm border border-secondary text-white" style={{backgroundColor: "#000000"}}>
+            <div className="accordion-item mb-3 rounded shadow-sm border border-secondary text-white" style={{ backgroundColor: "#000000" }}>
               <h2 className="accordion-header" id="headingOne">
-                <button className="accordion-button collapsed text-white fw-semibold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style={{backgroundColor: "#000000"}}>
+                <button className="accordion-button collapsed text-white fw-semibold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style={{ backgroundColor: "#000000" }}>
                   🙋‍♂️ I don't know anything about websites—can you still help me?
                 </button>
               </h2>
@@ -179,9 +176,9 @@ export default function Home() {
             </div>
 
             {/* Q2 */}
-            <div className="accordion-item mb-3 rounded shadow-sm border border-secondary text-white" style={{backgroundColor: "#000000"}}>
+            <div className="accordion-item mb-3 rounded shadow-sm border border-secondary text-white" style={{ backgroundColor: "#000000" }}>
               <h2 className="accordion-header" id="headingTwo">
-                <button className="accordion-button collapsed text-white fw-semibold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style={{backgroundColor: "#000000"}}>
+                <button className="accordion-button collapsed text-white fw-semibold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style={{ backgroundColor: "#000000" }}>
                   🤷‍♀️ I already have customers on WhatsApp and Instagram—why do I need a website?
                 </button>
               </h2>
@@ -193,9 +190,9 @@ export default function Home() {
             </div>
 
             {/* Q3 */}
-            <div className="accordion-item mb-3 rounded shadow-sm border border-secondary text-white" style={{backgroundColor: "#000000"}}>
+            <div className="accordion-item mb-3 rounded shadow-sm border border-secondary text-white" style={{ backgroundColor: "#000000" }}>
               <h2 className="accordion-header" id="headingThree">
-                <button className="accordion-button collapsed text-white fw-semibold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style={{backgroundColor: "#000000"}}>
+                <button className="accordion-button collapsed text-white fw-semibold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style={{ backgroundColor: "#000000" }}>
                   💸 I’m just starting out and can’t spend much—what are my options?
                 </button>
               </h2>
@@ -207,9 +204,9 @@ export default function Home() {
             </div>
 
             {/* Q4 */}
-            <div className="accordion-item mb-3 rounded shadow-sm border border-secondary text-white" style={{backgroundColor: "#000000"}}>
+            <div className="accordion-item mb-3 rounded shadow-sm border border-secondary text-white" style={{ backgroundColor: "#000000" }}>
               <h2 className="accordion-header" id="headingFour">
-                <button className="accordion-button collapsed text-white fw-semibold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style={{backgroundColor: "#000000"}}>
+                <button className="accordion-button collapsed text-white fw-semibold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style={{ backgroundColor: "#000000" }}>
                   🧩 I don’t have any logo, photos or content—can you help with that too?
                 </button>
               </h2>
@@ -221,9 +218,9 @@ export default function Home() {
             </div>
 
             {/* Q5 */}
-            <div className="accordion-item mb-3 rounded shadow-sm border border-secondary text-white" style={{backgroundColor: "#000000"}}>
+            <div className="accordion-item mb-3 rounded shadow-sm border border-secondary text-white" style={{ backgroundColor: "#000000" }}>
               <h2 className="accordion-header" id="headingFive">
-                <button className="accordion-button collapsed text-white fw-semibold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style={{backgroundColor: "#000000"}}>
+                <button className="accordion-button collapsed text-white fw-semibold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style={{ backgroundColor: "#000000" }}>
                   ⏱ How long will it take to build my website?
                 </button>
               </h2>
@@ -235,9 +232,9 @@ export default function Home() {
             </div>
 
             {/* Q6 */}
-            <div className="accordion-item mb-3 rounded shadow-sm border border-secondary text-white" style={{backgroundColor: "#000000"}}>
+            <div className="accordion-item mb-3 rounded shadow-sm border border-secondary text-white" style={{ backgroundColor: "#000000" }}>
               <h2 className="accordion-header" id="headingSix">
-                <button className="accordion-button collapsed text-white fw-semibold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" style={{backgroundColor: "#000000"}}>
+                <button className="accordion-button collapsed text-white fw-semibold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" style={{ backgroundColor: "#000000" }}>
                   📱 Will my website work on mobile and look modern?
                 </button>
               </h2>
@@ -249,9 +246,9 @@ export default function Home() {
             </div>
 
             {/* Q7 */}
-            <div className="accordion-item mb-3 rounded shadow-sm border border-secondary text-white" style={{backgroundColor: "#000000"}}>
+            <div className="accordion-item mb-3 rounded shadow-sm border border-secondary text-white" style={{ backgroundColor: "#000000" }}>
               <h2 className="accordion-header" id="headingSeven">
-                <button className="accordion-button collapsed text-white fw-semibold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" style={{backgroundColor: "#000000"}}>
+                <button className="accordion-button collapsed text-white fw-semibold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" style={{ backgroundColor: "#000000" }}>
                   🛠 What if I need changes later or want to add more?
                 </button>
               </h2>
@@ -265,8 +262,41 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="container-fluid my-5" style={{ fontFamily: "Arial" }}>
+          <div className="container">
+            <div className="row">
+              <div className="col-12 col-sm-12 col-md-6 col-lg-6 d-none d-sm-none d-md-block d-lg-block d-flex justify-content-center align-items-center">
+                <img src="https://img.pikbest.com/origin/09/23/73/70mpIkbEsTRCD.png!sw800" className="img-fluid" style={{ objectFit: "contain" }} />
+              </div>
+              <div className="col-12 col-sm-12 col-md-6 col-lg-6">
+                <div className="display-3">
+                  Quick Feedback
+                </div>
+                <form className="pt-3">
+                  <div className="form-floating mb-3">
+                    <input type="name" className="form-control" id="floatingInput" placeholder="Your Name" />
+                    <label for="floatingInput" className="text-white">Name</label>
+                  </div>
+                  <div className="form-floating mb-3">
+                    <input type="name" className="form-control" id="floatingInput" placeholder="Your Business Name" />
+                    <label for="floatingInput" className="text-white">Business Name</label>
+                  </div>
+                  <div className="form-floating mb-3">
+                    <select className="form-control" id="floatingInput">
+                      <option value="1">⭐</option>
+                      <option value="2">⭐⭐</option>
+                      <option value="3">⭐⭐⭐</option>
+                      <option value="4">⭐⭐⭐⭐</option>
+                      <option value="5">⭐⭐⭐⭐⭐</option>
+                    </select>
+                    <label htmlFor="ratingSelect" className="text-white">Rating</label>
+                  </div>
 
-
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
     </>
