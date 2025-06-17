@@ -262,37 +262,50 @@ export default function Home() {
           </div>
         </div>
 
+        {/* review form */}
         <div className="container-fluid my-5" style={{ fontFamily: "Arial" }}>
           <div className="container">
             <div className="row">
-              <div className="col-12 col-sm-12 col-md-6 col-lg-6 d-none d-sm-none d-md-block d-lg-block d-flex justify-content-center align-items-center">
+              <div className="col-12 col-sm-12 col-md-6 col-lg-6 d-none d-sm-none d-md-none d-lg-block d-flex justify-content-center align-items-center">
                 <img src="https://img.pikbest.com/origin/09/23/73/70mpIkbEsTRCD.png!sw800" className="img-fluid" style={{ objectFit: "contain" }} />
               </div>
-              <div className="col-12 col-sm-12 col-md-6 col-lg-6">
+              <div className="col-12 col-sm-12 col-md-12 col-lg-6">
                 <div className="display-3">
                   Quick Feedback
                 </div>
-                <form className="pt-3">
-                  <div className="form-floating mb-3">
-                    <input type="name" className="form-control" id="floatingInput" placeholder="Your Name" />
-                    <label for="floatingInput" className="text-white">Name</label>
+                <form className="review-form mt-3">
+                  <div className="form-group">
+                    <label htmlFor="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" />
                   </div>
-                  <div className="form-floating mb-3">
-                    <input type="name" className="form-control" id="floatingInput" placeholder="Your Business Name" />
-                    <label for="floatingInput" className="text-white">Business Name</label>
+
+                  <div className="form-group">
+                    <label htmlFor="business">Business Name</label>
+                    <input type="text" id="business" placeholder="Your Business Name" />
                   </div>
-                  <div className="form-floating mb-3">
-                    <select className="form-control" id="floatingInput">
+
+                  <div className="form-group">
+                    <label htmlFor="rating">Rating</label>
+                    <select id="rating">
+                      <option value="">Give your Rating</option>
                       <option value="1">⭐</option>
                       <option value="2">⭐⭐</option>
                       <option value="3">⭐⭐⭐</option>
                       <option value="4">⭐⭐⭐⭐</option>
                       <option value="5">⭐⭐⭐⭐⭐</option>
                     </select>
-                    <label htmlFor="ratingSelect" className="text-white">Rating</label>
                   </div>
 
+                  <div className="form-group">
+                    <label htmlFor="photo">Upload Photo</label>
+                    <input type="file" id="photo" />
+                  </div>
+
+                  <button type="submit">Submit</button>
                 </form>
+
+
+
               </div>
             </div>
           </div>
