@@ -1,82 +1,109 @@
-import React from 'react'
+import React from 'react';
+import { MdOutlineDoubleArrow } from "react-icons/md";
 
-const page = () => {
-    return (
-        <section id="about" className="py-5 bg-black text-white" style={{ fontFamily: "Arial, sans-serif" }}>
-      <div className="container">
-        <div className="row align-items-center">
+const About = () => {
+  return (
+    <section className="container-fluid bg-black text-white" style={{ fontFamily: 'var(--font-oswald)' }}>
 
-          {/* Left Content */}
-          <div className="col-md-6 pe-md-5 border-end border-secondary">
-            <h2 className="fw-bold display-5 mb-4 text-warning">Let’s Build Something Real.</h2>
-            <p className="lead text-light mb-3">
-              I’m Roshan — a full-stack learner who loves turning ideas into websites that actually help.
+      {/* Banner */}
+      <img src="/about banner.png" alt="About Banner" className="img-fluid w-100" />
+
+      {/* About Content */}
+      <div className="about-content container pt-5">
+
+        {/* Intro */}
+        <h1 className="display-4 py-4">Hi 🫡! I’m Roshan,</h1>
+
+        <p className="lead fs-5 fs-md-4">
+          A passionate freelance web developer. I help students, startups, and small businesses build an online presence to attract clients and job opportunities by providing modern, user-friendly websites.
+        </p>
+        <p className="lead fs-5 fs-md-4">
+          I believe every idea — no matter how small — deserves a place on the internet. That’s why I build simple, affordable websites that bring your business or portfolio to life.
+        </p>
+        <p className="lead fs-5 fs-md-4">
+          My journey started with curiosity and passion. Today, I help others who feel, “I don’t know how websites work,” because I was once there too.
+        </p>
+        <p className="lead fs-5 fs-md-4">
+          I'm here to support you on your journey to build a powerful digital presence.
+        </p>
+
+        {/* Services */}
+        <h1 className="display-5 mt-5">Services I Provide</h1>
+        <div className="mt-4">
+          {[
+            "Portfolio websites for students",
+            "Business websites for startups",
+            "Clean, mobile-friendly designs",
+            "Fast delivery with ongoing support",
+            "Simple process — even if you're not tech-savvy",
+            "Reliable support and website maintenance",
+            "Regular updates and improvements",
+            "SEO optimization for better visibility",
+          ].map((item, index) => (
+            <p key={index} className="lead fs-6 fs-md-5 d-flex align-items-start">
+              <MdOutlineDoubleArrow className="me-2 mt-1 text-warning" />
+              {item}
             </p>
-            <p className="text-light">
-              Whether you're a student trying to land your first job or a local business owner just starting online — I'm here to guide you step-by-step, with no tech jargon and no pressure.
-            </p>
-
-            <div className="mt-4 bg-dark border-start border-4 border-warning ps-3 py-2">
-              <p className="mb-1"><strong>🎯 Mission:</strong> Make the web more accessible for people like YOU.</p>
-              <p className="mb-1"><strong>⚒️ Skills:</strong> HTML, CSS, JS, Node.js, MongoDB, React, Bootstrap</p>
-              <p className="mb-0"><strong>📍 Based in:</strong> India — working with anyone, anywhere.</p>
-            </div>
-
-            <a href="#contact" className="btn btn-outline-warning mt-4 fw-semibold px-4">Let’s Connect</a>
-          </div>
-
-          {/* Right Image */}
-          <div className="col-md-6 mt-5 mt-md-0 text-center">
-            <div className="img-fluid" style={{ Width: "100%", height: "100%"}}>
-              <img
-                src="/About picture.png"
-                alt="Roshan working on laptop"
-                className="img-fluid rounded"
-              />
-              <p className="mt-3 small text-white-50">“Behind every screen, there's a story. Let's build yours.”</p>
-            </div>
-          </div>
-
+          ))}
         </div>
+
+        {/* Mission */}
+        <h1 className="display-5 mt-5">My Mission</h1>
+        <p className="lead fs-5 fs-md-4">
+          My mission is to empower individuals and businesses by making web development accessible and straightforward. I aim to create websites that not only look great but also function seamlessly, helping you achieve your goals online.
+        </p>
+
+        {/* Projects */}
+        <h1 className="display-5 mt-5">Projects I Have Worked On</h1>
+        <p className="lead fs-5 fs-md-4">
+          I’ve worked on a variety of projects, from personal portfolios to business websites. Each project is a testament to my commitment to quality and customer satisfaction. Here are some examples:
+        </p>
+
+        <div className="row gy-4">
+          <div className="col-12 col-sm-6 col-md-6 col-lg-6">
+            <a href="https://logolabtechnology.netlify.app/" className="text-decoration-none">
+              <img src="/startup.png" alt="Portfolio Website" className="img-fluid rounded shadow-sm" />
+              <p className="mt-2 lead text-white text-center">Portfolio Website</p>
+            </a>
+          </div>
+          <div className="col-12 col-sm-6 col-md-6 col-lg-6">
+            <a href="https://wedgramdesigns.vercel.app/" className="text-decoration-none">
+              <img src="/business.png" alt="Business Website" className="img-fluid rounded shadow-sm" />
+              <p className="mt-2 lead text-white text-center">Business Website</p>
+            </a>
+          </div>
+          <div className="col-12 col-sm-6 col-md-6 col-lg-6">
+            <a href="https://raghupatilportfolio.netlify.app/" className="text-decoration-none">
+              <img src="/portfolio.png" alt="Personal Portfolio" className="img-fluid rounded shadow-sm" />
+              <p className="mt-2 lead text-white text-center">Portfolio Website</p>
+            </a>
+          </div>
+        </div>
+
+        {/* Why Work With Me */}
+        <h1 className="display-5 mt-5">Why Work With Me?</h1>
+        <p className="lead fs-5 fs-md-4">
+          I understand that choosing a web developer is a big decision. Here’s why I believe I’m the right partner for you:
+        </p>
+        <ul className="list-unstyled lead fs-6 fs-md-5 ps-3">
+          <li>✅ 100% responsive designs</li>
+          <li>✅ Simple process — even if you're not tech-savvy</li>
+        </ul>
+
+        {/* Call to Action */}
+        <div className="text-center mt-5">
+          <p className="fw-semibold fs-5">Ready to make your first website or online portfolio?</p>
+          <a href="#contact" className="btn btn-outline-warning fw-semibold px-4">Let’s Connect</a>
+        </div>
+
+        {/* Quote */}
+        <div className="text-center mt-5">
+          <p className="fw-semibold fst-italic fs-6">“Behind every screen, there's a story. Let's build yours.”</p>
+        </div>
+
       </div>
     </section>
+  );
+};
 
-
-        // <>
-        //     <section id="about" className="py-5 bg-black text-white" style="font-family: 'Arial', sans-serif;">
-        //         <div className="container">
-        //             <div className="row align-items-center">
-
-        //                 {/* <!-- Left Content --> */}
-        //                 <div className="col-md-6 pe-md-5 border-end border-secondary">
-        //                     <h2 className="fw-bold display-5 mb-4 text-warning">Let’s Build Something Real.</h2>
-        //                     <p className="lead text-light mb-3">I’m Roshan — a full-stack learner who loves turning ideas into websites that actually help.</p>
-        //                     <p className="text-light">Whether you're a student trying to land your first job or a local business owner just starting online — I'm here to guide you step-by-step, with no tech jargon and no pressure.</p>
-
-        //                     <div className="mt-4 bg-dark border-start border-4 border-warning ps-3 py-2">
-        //                         <p className="mb-1"><strong>🎯 Mission:</strong> Make the web more accessible for people like YOU.</p>
-        //                         <p className="mb-1"><strong>⚒️ Skills:</strong> HTML, CSS, JS, Node.js, MongoDB, React, Bootstrap</p>
-        //                         <p className="mb-0"><strong>📍 Based in:</strong> India — working with anyone, anywhere.</p>
-        //                     </div>
-
-        //                     <a href="#contact" className="btn btn-outline-warning mt-4 fw-semibold px-4">Let’s Connect</a>
-        //                 </div>
-
-        //                 {/* <!-- Right Image --> */}
-        //                 <div className="col-md-6 mt-5 mt-md-0 text-center">
-        //                     <div className="bg-secondary rounded shadow p-3" style="max-width: 350px; margin: auto;">
-        //                         <img src="your-image.jpg" alt="Roshan working on laptop" className="img-fluid rounded" />
-        //                         <p className="mt-3 small text-white-50">“Behind every screen, there's a story. Let's build yours.”</p>
-        //                     </div>
-        //                 </div>
-
-        //             </div>
-        //         </div>
-        //     </section>
-
-        // </>
-
-    )
-}
-
-export default page
+export default About;
